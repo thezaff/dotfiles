@@ -1,0 +1,10 @@
+*
+
+!.gitignore
+!.i3/*
+!.config/
+!.config/polybar
+!.config/polybar/**
+!.oh-my-zsh
+
+
