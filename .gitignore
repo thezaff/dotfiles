@@ -9,3 +9,4 @@
 !.p10k.zsh
 !.config/alacritty
 !.config/alacritty/**
+!.Xresources
