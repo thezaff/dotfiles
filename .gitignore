@@ -1,7 +1,8 @@
 *
 
 !.gitignore
-!.i3/*
+!.i3
+!.i3/**
 !.config/
 !.config/polybar
 !.config/polybar/**
