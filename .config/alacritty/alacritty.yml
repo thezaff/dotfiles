@@ -1,0 +1,48 @@
+window:
+  padding:
+    x: 4
+    y: 1
+
+# Colors (Horizon Dark)
+font:
+        normal:
+                family: JetBrainsMono Nerd Font
+                style: Regular
+        bold:
+                family: JetBrainsMono Nerd Font
+                style: Bold
+        italic:
+                family: JetBrainsMono Nerd Font
+                style: Italic
+colors:
+  # Primary colors
+  primary:
+    background: '#090a0f'
+    foreground: '#F0F0F0'
+
+  # Normal colors
+  normal:
+    black: '#090a0f'
+    red: '#E75A5A'
+    green: '#3fdaa4'
+    yellow: '#FEE17C'
+    blue: '#4c71f6'
+    magenta: '#e382bc'
+    cyan: '#70e3eb'
+    white: '#d5d8da'
+
+  # Bright colors
+  bright:
+    black: '#5b5858'
+    red: '#ec6a88'
+    green: '#A9EFA3'
+    yellow: '#fbc3a7'
+    blue: '#3fc4de'
+    magenta: '#f075b5'
+    cyan: '#6be4e6'
+    white: '#d5d8da'
+  
+  cursor:
+    text: '#090a0f'
+    cursor: '#FEE17C'
+    
