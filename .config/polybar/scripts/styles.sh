@@ -13,7 +13,7 @@ rofi_path="$HOME/.config/polybar/scripts/themes"
 if  [[ $1 = "--Dark" ]]; then
 
 # wallpaper ---------------------------------
-nitrogen --save --set-zoom-fill $polybar_path/wallpapers/bg_1.jpg
+# nitrogen --save --set-zoom-fill $polybar_path/wallpapers/bg_1.jpg
 
 # polybar ---------------------------------
 sed -i -e 's/bg = .*/bg = #212B30/g' $polybar_path/colors.ini
@@ -53,7 +53,7 @@ sed -i -e 's/off: .*/off:    #EC7875ff;/g' $rofi_path/colors.rasi
 elif  [[ $1 = "--Light" ]]; then
 
 # wallpaper ---------------------------------
-nitrogen --save --set-zoom-fill $polybar_path/wallpapers/bg_2.jpg
+# nitrogen --save --set-zoom-fill $polybar_path/wallpapers/bg_2.jpg
 
 # polybar ---------------------------------
 sed -i -e 's/bg = .*/bg = #FFFFFF/g' $polybar_path/colors.ini
