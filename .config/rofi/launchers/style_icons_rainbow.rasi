@@ -25,15 +25,15 @@ configuration {
 
 /* colors */
 * {
-red: #EC5250;
-blue: #25B1CA;
-green: #2ABB9C;
-purple: #5537D2;
+red: #E75A5A;
+blue: #4c71f6;
+green: #a9efa3;
+purple: #B267E6;
 }
 
 // black
 * {
-bg: #000000cc;
+bg: #090a0f;
 bg-sel: #00000066;
 fg: #ffffff;
 }

@@ -18,17 +18,17 @@ configuration {
 	bw: 0;
     fullscreen: true;
     show-icons: true;
-	terminal: "termite";
+	terminal: "alacritty";
 	sidebar-mode: false;
 }
 
 // black version
 * {
-  bg: #000000;
-  ac: #869fa214;
-  ac-txt: #869fa2;
+  bg: #090a0f;
+  ac: #e382bc;
+  ac-txt: #090a0f;
   item: #bdc3c3;
-  txt: #d1d5da;
+  txt: #A9EFA3;
 }
 
 // white version

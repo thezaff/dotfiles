@@ -15,5 +15,16 @@
 # style_normal_rainbow_sidebar
 
 style="style_normal"
+# style="style_icons_full"
+# style="style_icons_blur"
+# style="style_icons_popup"
+# style="style_normal_purple"
+# style="style_icons_rainbow"
+# style="style_normal"
+# style="style_normal"
+# style="style_normal"
+# style="style_normal"
+# style="style_normal"
+
 
 rofi -no-lazy-grab -show drun -theme launchers/"$style".rasi
