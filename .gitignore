@@ -6,8 +6,12 @@
 !.config/
 !.config/polybar
 !.config/polybar/**
+!.config/rofi
+!.config/rofi/**
 !.oh-my-zsh
+!.oh-my-zsh/**
 !.p10k.zsh
 !.config/alacritty
 !.config/alacritty/**
+!.zshrc
 !.Xresources
