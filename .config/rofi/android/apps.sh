@@ -21,22 +21,22 @@ options="$terminal\n$files\n$editor\n$browser\n$music\n$settings"
 chosen="$(echo -e "$options" | $rofi_command -p "Most Used" -dmenu -selected-row 0)"
 case $chosen in
     $terminal)
-        termite &
+        alacritty &
         ;;
     $files)
-        thunar &
+        pcmanfm &
         ;;
     $editor)
-        geany &
+        code &
         ;;
     $browser)
-        firefox &
+        chrome &
         ;;
-    $music)
-        lxmusic &
-        ;;
-    $settings)
-        xfce4-settings-manager &
-        ;;
+    # $music)
+    #     lxmusic &
+    #     ;;
+    # $settings)
+    #     xfce4-settings-manager &
+    #     ;;
 esac
 

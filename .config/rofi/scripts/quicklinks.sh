@@ -21,22 +21,22 @@ options="$google\n$facebook\n$twitter\n$github\n$reddit\n$youtube"
 chosen="$(echo -e "$options" | $rofi_command -p "Open In  :  Firefox" -dmenu -selected-row 0)"
 case $chosen in
     $google)
-        firefox --new-tab https://www.google.com
+        google-chrome-stable --new-tab https://www.google.com
         ;;
     $facebook)
-        firefox --new-tab https://www.facebook.com
+        google-chrome-stable --new-tab https://www.facebook.com
         ;;
     $twitter)
-        firefox --new-tab https://www.twitter.com
+        google-chrome-stable --new-tab https://www.twitter.com
         ;;
     $github)
-        firefox --new-tab https://www.github.com
+        google-chrome-stable --new-tab https://www.github.com
         ;;
     $reddit)
-        firefox --new-tab https://www.reddit.com
+        google-chrome-stable --new-tab https://www.reddit.com
         ;;
     $youtube)
-        firefox --new-tab https://www.youtube.com
+        google-chrome-stable --new-tab https://www.youtube.com
         ;;
 esac
 

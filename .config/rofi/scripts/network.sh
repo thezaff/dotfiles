@@ -26,7 +26,7 @@ if (ping -c 1 archlinux.org || ping -c 1 google.com || ping -c 1 bitbucket.org |
         fi
 	active="-a 0"
 	MSG="﬉ Online"
-	PIP="$(dig +short myip.opendns.com @resolver1.opendns.com )"
+	# PIP="$(dig +short myip.opendns.com @resolver1.opendns.com )"
 	fi
 else
     urgent="-u 0"
@@ -40,7 +40,8 @@ bmon="龍"
 launch_cli=""
 launch="歷"
 
-options="$connected\n$bmon\n$launch_cli\n$launch"
+# options="$connected\n$bmon\n$launch_cli\n$launch"
+options="$connected\n$launch_cli\n$launch"
 
 ## Main
 chosen="$(echo -e "$options" | $rofi_command -p "$MSG" -dmenu $active $urgent -selected-row 1)"
@@ -52,11 +53,11 @@ case $chosen in
 			nmcli radio wifi on
 		fi 
         ;;
-    $bmon)
-        termite -e bmon
-        ;;
+    # $bmon)
+    #     alacritty -e bmon
+    #     ;;
     $launch_cli)
-        termite -e nmtui
+        alacritty -e nmtui
         ;;
     $launch)
         nm-connection-editor

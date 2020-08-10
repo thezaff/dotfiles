@@ -42,7 +42,8 @@ bindsym $mod+x exec --no-startup-id dmenu_recency
 bindsym $mod+z exec --no-startup-id morc_menu
 
 # launch rofi meni
-bindsym $mod+d exec --no-startup-id rofi -show run
+#bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+d exec ~/.config/rofi/launchers/launcher.sh
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
@@ -62,7 +63,7 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym $mod+F2 exec palemoon
+bindsym $mod+F2 exec google-chrome-stable
 bindsym $mod+F3 exec pcmanfm
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
@@ -365,7 +366,7 @@ bindsym $mod+m bar mode toggle
 # Theme colors
 # class                   border             backgr.          text indic.      child_border
   client.focused          $term_background   #212431          $term_color5     $term_color14
-  client.focused_inactive $term_color13      $term_color3     $term_color10    $term_color13
+  client.focused_inactive $term_color13      $term_color3     $term_background $term_color13
   client.unfocused        $term_background   $term_background $term_color10    $term_color13
   client.urgent           $term_color1       $term_color1     $term_background #268BD2
   client.placeholder      $term_color4       $term_background #ffffff          #000000 

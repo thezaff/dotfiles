@@ -11,32 +11,33 @@ rofi_command="rofi -theme themes/apps.rasi"
 terminal=""
 files="ﱮ"
 editor=""
-browser=""
+browser=""
 music=""
 settings="漣"
 
 # Variable passed to rofi
-options="$terminal\n$files\n$editor\n$browser\n$music\n$settings"
+# options="$terminal\n$files\n$editor\n$browser\n$music\n$settings"
+options="$terminal\n$files\n$editor\n$browser"
 
 chosen="$(echo -e "$options" | $rofi_command -p "Most Used" -dmenu -selected-row 0)"
 case $chosen in
     $terminal)
-        termite &
+        alacritty &
         ;;
     $files)
-        thunar &
+        pcmanfm &
         ;;
     $editor)
-        geany &
+        code &
         ;;
     $browser)
-        firefox &
+        google-chrome-stable &
         ;;
-    $music)
-        lxmusic &
-        ;;
-    $settings)
-        xfce4-settings-manager &
-        ;;
+    # $music)
+    #     lxmusic &
+    #     ;;
+    # $settings)
+    #     xfce4-settings-manager &
+    #     ;;
 esac
 
