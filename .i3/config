@@ -133,7 +133,7 @@ bindsym $mod+space focus mode_toggle
 #bindsym $mod+Shift+s sticky toggle
 #bindsym --release $mod+Shift+s exec scrot -s ''
 bindsym $mod+Shift+s --release exec "scrot -s /tmp/screenshot-%Y-%m-%d-%S_$wx$h.png -e 'xclip -selection c -t image/png < $f'"
-bindsym Print exec "scrot /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
+bindsym Print exec "scrot /tmp/screenshot-%Y-%m-%d-%S_$wx$h.png -e 'xclip -selection c -t image/png < $f'"
 #'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES/SCREENSHOTS) ; viewnior $$(xdg-user-dir PICTURES)/SCREENSHOTS/$f'
 
 # focus the parent container
