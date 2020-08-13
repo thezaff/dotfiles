@@ -8,6 +8,9 @@
 !.config/polybar/**
 !.config/rofi
 !.config/rofi/**
+!.config/systemd/
+!.config/systemd/user/
+!.config/systemd/user/**
 !.oh-my-zsh
 !.oh-my-zsh/**
 !.p10k.zsh

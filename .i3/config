@@ -68,11 +68,11 @@ bindsym $mod+F3 exec pcmanfm
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec alacritty -e 'mocp'
-bindsym $mod+t exec --no-startup-id pkill compton
-bindsym $mod+Ctrl+t exec --no-startup-id compton -b
+bindsym $mod+t exec --no-startup-id pkill picom
+bindsym $mod+Ctrl+t exec --no-startup-id picom -b --config ~/.config/picom/picom.conf
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 #bindsym Print exec --no-startup-id i3-scrot
-bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
+#bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
@@ -133,7 +133,7 @@ bindsym $mod+space focus mode_toggle
 #bindsym $mod+Shift+s sticky toggle
 #bindsym --release $mod+Shift+s exec scrot -s ''
 bindsym $mod+Shift+s --release exec "scrot -s /tmp/screenshot-%Y-%m-%d-%S_$wx$h.png -e 'xclip -selection c -t image/png < $f'"
-bindsym Print exec "scrot /tmp/screenshot-%Y-%m-%d-%S_$wx$h.png -e 'xclip -selection c -t image/png < $f'"
+bindsym Print --release exec "scrot /tmp/screenshot-%Y-%m-%d-%S_$wx$h.png -e 'xclip -selection c -t image/png < $f'"
 #'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES/SCREENSHOTS) ; viewnior $$(xdg-user-dir PICTURES)/SCREENSHOTS/$f'
 
 # focus the parent container
@@ -290,7 +290,7 @@ bindsym $mod+9 exec --no-startup-id blurlock
 exec --no-startup-id setxkbmap -layout "us,ru" -option "grp:alt_shift_toggle,grp_led:scroll"
 exec --no-startup-id bash ~/.config/polybar/launch.sh
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id nitrogen --restore; sleep 1; compton -b
+exec --no-startup-id nitrogen --restore; sleep 1; picom -b --config ~/.config/picom/picom.conf
 #exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
@@ -300,6 +300,7 @@ exec --no-startup-id blueman-applet
 #exec_always --no-startup-id sbxkb
 #exec --no-startup-id start_conky_maia
 exec --no-startup-id start_conky_green
+#exec --no-startup-id start_conky_solarized
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
